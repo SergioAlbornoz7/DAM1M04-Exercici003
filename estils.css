@@ -1,0 +1,582 @@
+/*variable definicio dins*/
+:root{ 
+  --nav-h: 64px;      /* àmbit global */
+  --page-max: 980px;  /* àmbit global */
+}
+/*variable definidasa*/
+.topnav {
+  --horizontal-padding: 16px; /* àmbit local */
+
+  height: var(--nav-h);
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
+}
+/*autocente amplada*/
+.autocenter {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+}
+/*text gradient*/
+.gradient-text {
+  background: conic-gradient(#ec8c86,#d78191,#c1759c,#8eabcb,#7cbddb,#91c6a8,#b4d48d,#dfc17e,#ec8c86);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5em;
+  font-weight: bold;
+}
+/*fotogragfia anys 70*/
+.picture70block { 
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+}
+
+.picture70img { 
+  border-radius: 16px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.20) , 0px 2px 17px 0px rgba(0,0,0,0.20);
+  box-sizing: border-box;
+  filter: saturate(150%);
+  width: 100%;
+}
+/*fotografia estil polaroid*/
+.polaroidBlock { 
+  box-sizing: border-box;
+  padding: 32px;
+  width: 100%;
+}
+.polaroidFrame { 
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.20);
+  padding: 16px;
+  transform: rotate3d(0, 0, 1, 358deg);
+}
+/*foto estil vintage*/
+.vintageBlock {
+  box-sizing: border-box;
+  padding: 32px;
+  width: 80%;
+}
+
+.vintageFrame {
+  background: linear-gradient(-15deg, #faf7e3, #d7ca99);
+  border-radius: 16px;
+  box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.20);
+  padding: 16px;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease-in-out;
+}
+/*retallar text*/
+.truncate-single {
+    width: 250px;             /* amplada màxima */
+    white-space: nowrap;      /* no fer salts de línia */
+    overflow: hidden;         /* amaga el que sobrepassa */
+    text-overflow: ellipsis;  /* mostra ... al final */
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+/*text centrat amb subtitul*/
+body { 
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.autocenterContainer {
+    max-width: 800px;     /* amplada màxima */
+    margin: auto;         /* centra horitzontalment */
+    background: white;
+    padding: 20px;
+}
+.titleContainer { 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.titleContainer > h1 { 
+    box-sizing: border-box;
+    margin: 0;
+}
+.titleContainer > h2 { 
+    box-sizing: border-box;
+    font-weight: 100;
+    margin: 0;
+}
+/*imatge background*/
+body { 
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.autocenterContainer {
+    max-width: 1264px;    /* amplada màxima */
+    margin: auto;         /* centra horitzontalment */
+    background: white;
+    padding: 20px;
+}
+.infoContainer { 
+    --horizPadding: 32px;
+
+    box-sizing: border-box;
+    padding-left: var(--horizPadding);
+    padding-right: var(--horizPadding);
+    width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
+}
+.infoContainer > .cutMask { 
+    /* Necessari per retallar l'arrodoniment 
+        del color de fons i la foto */
+    background-color: #c9c9c9;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.infoContainer .textContainer { 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 50%;
+}
+.infoContainer .textContainer > h1 { 
+    margin: 0;
+}
+/*caixes o moduls*/
+ody { 
+    background-color: #174197;
+    color: #ffffff;
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.autocenterContainer {
+    max-width: 1264px;    /* amplada màxima */
+    margin: auto;         /* centra horitzontalment */
+    padding: 20px;
+}
+.boxesContainer {
+    --horizPadding: 16px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-left: var(--horizPadding);
+    padding-right: var(--horizPadding);
+    width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
+}
+.boxesContainer > .box { 
+    align-items: center;
+    background-color: #3a5b9c;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    width: 250px;
+    padding: 24px;
+}
+.boxesContainer > .box > p:first-child { 
+    font-size: 2em;
+    margin: 0;
+}
+.boxesContainer > .box > p:last-child { 
+    margin: 0;
+}  
+/*targestes o cards*/
+body { 
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.autocenterContainer {
+    max-width: 1264px;    /* amplada màxima */
+    margin: auto;         /* centra horitzontalment */
+    padding: 20px;
+}
+.cardsContainer { 
+    --horizPadding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: var(--horizPadding);
+    padding-right: var(--horizPadding);
+    width: calc(100% - 2 * var(--horizPadding));
+}
+.card0 { 
+    border: solid 1px lightgray;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+    max-width: 275px;
+    min-width: 275px;
+    overflow: hidden;
+}
+.card0 > img { 
+    box-sizing: border-box;
+    width: 100%;
+}
+.card0 > div { 
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 16px;
+}
+.card0 > div > h1 { 
+    margin: 0;
+}
+.card1{ 
+    background: center / cover url("./imageHiking.jpg");
+    border: solid 1px lightgray;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 16px;
+    max-width: 275px;
+    min-width: 275px;
+    overflow: hidden;
+}
+.card1 > div { 
+    backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 16px;
+}
+.card1 > div > h1 {
+    margin: 0;
+}
+.card2 {
+    align-items: center;
+    border: solid 1px lightgray;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+    max-width: 275px;
+    min-width: 275px;
+    overflow: hidden;
+}
+.backImage {
+    background: center / cover url("./imageTrekking.jpg");
+    border-radius: 100%;
+    box-shadow: inset 0px 1px 15px 9px rgba(0,0,0,0.20);
+    box-sizing: border-box;
+    height: 150px;
+    margin: 16px;
+    overflow: hidden;
+    width: 150px;
+}
+.card2 > .contents {
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 16px;
+}
+.card2 > .contents > h1 { 
+    margin: 0;
+}
+/*titol amb imatge centrada de fons*/
+body { 
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.pictureHeader { 
+    align-items: center;
+    background: center / cover url("./imageMain.jpg");
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    position: relative;
+}
+.pictureHeader > h1 { 
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+.pictureHeader > p { 
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 0;
+    margin-top: 16px;
+    max-width: 80%;
+    text-align: center;
+}
+/*imatge cuadre text*/
+body { 
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.pictureTextBox { 
+    align-items: center;
+    background: center / cover url("./imageMain.jpg");
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    position: relative;
+}
+.pictureTextBox > div { 
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 25px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    padding: 16px;
+    position: absolute;
+}
+.pictureTextBox > div > h1 { 
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+.pictureTextBox > div > p { 
+    margin: 0;
+    margin-top: 16px;
+    text-align: justify;
+}
+/*menu frozenglass*/
+:root{
+  --nav-h: 64px;
+  --glass-bg: rgba(255,255,255,0.45);
+  --glass-bd: rgba(255,255,255,0.6);
+  --page-max: 980px;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  background: linear-gradient(180deg, #e6f0ff 0%, #f9fbff 40%, #ffffff 100%);
+}
+
+/* ===== NAV “FROZEN GLASS” ===== */
+.topnav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--nav-h);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 0 20px;
+  border-bottom: 1px solid var(--glass-bd);
+
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.topnav .brand{
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.topnav .menu{
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav .menu a{
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background-color 120ms ease, transform 80ms ease;
+}
+
+.topnav .menu a:hover{
+  background: rgba(255,255,255,0.55);
+  transform: translateY(-1px);
+}
+
+/* ===== HERO FLEX ===== */
+.hero{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalment */
+  align-items: center;     /* centra horitzontalment */
+  text-align: center;
+  background:
+    radial-gradient(1200px 300px at 10% 0%, rgba(0,140,255,0.18), transparent 60%),
+    radial-gradient(800px 200px at 90% 0%, rgba(0,200,120,0.15), transparent 60%);
+  padding-top: 10px;
+}
+
+/* ===== CONTENIDOR AUTOCENTRAT ===== */
+.autocenter{
+  width: min(100% - 32px, var(--page-max));
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 24px 0 80px;
+}
+/*pie de pantalla*/
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.autocenter {
+    flex: 1; /* ocupa tot l'espai disponible abans del footer */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+footer {
+    background: rgba(30, 30, 30, 0.95);
+    color: #eee;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*permite adaptabilidad a pantallas pequeñas*/
+}
+
+.footerCol {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footerCol h3 {
+    border-bottom: 2px solid #66ccff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.footerCol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerCol ul li {
+    margin: 6px 0;
+}
+
+.footerCol a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+.footerCol a:hover {
+    text-decoration: underline;
+}
+
+.footerBottom {
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #444;
+    width: 100%;
+}
+/*taules*/
+:root{
+  --page-max: 800px;
+  --color-header: #004080;
+  --color-odd-row: #f5f9ff;
+  --color-highlight: #ffdf91;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #fafcff;
+  color: #222;
+}
+
+.autocenter{
+  width: min(100% - 32px, var(--page-max));
+  margin: 40px auto;
+}
+
+/*taula*/
+.taulaExemple{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/*Cabecera*/
+.taulaExemple thead{
+  background-color: var(--color-header);
+  color: white;
+  text-align: left;
+}
+
+.taulaExemple th,
+.taulaExemple td{
+  padding: 10px 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+/*Primera columna*/
+.taulaExemple td:first-child,
+.taulaExemple th:first-child{
+  font-weight: 600;
+  background-color: rgba(0, 64, 128, 0.05);
+}
+
+/*Filas impares*/
+.taulaExemple tbody tr:nth-child(odd){
+  background-color: var(--color-odd-row);
+}
+
+/*Celdas destacadas*/
+.taulaExemple td.destacada{
+  background-color: var(--color-highlight);
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #e0b000;
+}
+
+/*Efecto hover*/
+.taulaExemple tbody tr:hover{
+  background-color: #eef4ff;
+}
