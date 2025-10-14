@@ -582,3 +582,11 @@ html, body{
 }
 
         
+.main-nav__nav-link {
+    position: relative;
+    padding-bottom: 17px;
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+}
