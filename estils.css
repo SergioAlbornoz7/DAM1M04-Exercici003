@@ -79,7 +79,6 @@ html, body{
   justify-items: center;
   flex: 1;
   align-items: center;
-  width: min(100% - 32px, var(--page-max));
   margin: 40px auto;
 }
 /*text gradient*/
@@ -165,7 +164,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 16px;
-  max-width: 275px;
+  max-width: 35%;
   min-width: 275px;
   overflow: hidden;
 }
@@ -213,7 +212,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   margin: 16px;
-  max-width: 575px;
+  max-width: 70%;
   min-width: 275px;
   overflow: hidden;
 }
