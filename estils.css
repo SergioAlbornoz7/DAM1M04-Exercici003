@@ -11,11 +11,14 @@
   padding-left: var(--horizontal-padding);
   padding-right: var(--horizontal-padding);
 }
-/*autocente amplada*/
+/*autocenter*/
 .autocenter {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 15px;
+  display: grid;
+  justify-items: center;
+  flex: 1;
+  align-items: center;
+  width: min(100% - 32px, var(--page-max));
+  margin: 40px auto;
 }
 /*text gradient*/
 .gradient-text {
@@ -69,295 +72,106 @@
 }
 /*retallar text*/
 .truncate-single {
-    width: 250px;             /* amplada màxima */
-    white-space: nowrap;      /* no fer salts de línia */
-    overflow: hidden;         /* amaga el que sobrepassa */
-    text-overflow: ellipsis;  /* mostra ... al final */
-    border: 1px solid #ccc;
-    padding: 4px;
+  width: 250px;             /* amplada màxima */
+  white-space: nowrap;      /* no fer salts de línia */
+  overflow: hidden;         /* amaga el que sobrepassa */
+  text-overflow: ellipsis;  /* mostra ... al final */
+  border: 1px solid #ccc;
+  padding: 4px;
 }
-/*text centrat amb subtitul*/
-body { 
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.autocenterContainer {
-    max-width: 800px;     /* amplada màxima */
-    margin: auto;         /* centra horitzontalment */
-    background: white;
-    padding: 20px;
-}
-.titleContainer { 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-.titleContainer > h1 { 
-    box-sizing: border-box;
-    margin: 0;
-}
-.titleContainer > h2 { 
-    box-sizing: border-box;
-    font-weight: 100;
-    margin: 0;
-}
-/*imatge background*/
-body { 
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.autocenterContainer {
-    max-width: 1264px;    /* amplada màxima */
-    margin: auto;         /* centra horitzontalment */
-    background: white;
-    padding: 20px;
-}
-.infoContainer { 
-    --horizPadding: 32px;
-
-    box-sizing: border-box;
-    padding-left: var(--horizPadding);
-    padding-right: var(--horizPadding);
-    width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
-}
-.infoContainer > .cutMask { 
-    /* Necessari per retallar l'arrodoniment 
-        del color de fons i la foto */
-    background-color: #c9c9c9;
-    border-radius: 16px;
-    box-sizing: border-box;
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-.infoContainer .textContainer { 
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-    width: 50%;
-}
-.infoContainer .textContainer > h1 { 
-    margin: 0;
-}
-/*caixes o moduls*/
-ody { 
-    background-color: #174197;
-    color: #ffffff;
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.autocenterContainer {
-    max-width: 1264px;    /* amplada màxima */
-    margin: auto;         /* centra horitzontalment */
-    padding: 20px;
-}
-.boxesContainer {
-    --horizPadding: 16px;
-
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px;
-    padding-left: var(--horizPadding);
-    padding-right: var(--horizPadding);
-    width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
-}
-.boxesContainer > .box { 
-    align-items: center;
-    background-color: #3a5b9c;
-    border-radius: 16px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    width: 250px;
-    padding: 24px;
-}
-.boxesContainer > .box > p:first-child { 
-    font-size: 2em;
-    margin: 0;
-}
-.boxesContainer > .box > p:last-child { 
-    margin: 0;
-}  
 /*targestes o cards*/
 body { 
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.autocenterContainer {
-    max-width: 1264px;    /* amplada màxima */
-    margin: auto;         /* centra horitzontalment */
-    padding: 20px;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
 }
 .cardsContainer { 
-    --horizPadding: 16px;
-   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: var(--horizPadding);
-    padding-right: var(--horizPadding);
-    width: calc(100% - 2 * var(--horizPadding));
+  --horizPadding: 16px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: var(--horizPadding);
+  padding-right: var(--horizPadding);
+  width: calc(100% - 2 * var(--horizPadding));
 }
 .card0 { 
-    border: solid 1px lightgray;
-    border-radius: 16px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 16px;
-    max-width: 275px;
-    min-width: 275px;
-    overflow: hidden;
+  border: solid 1px lightgray;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  max-width: 275px;
+  min-width: 275px;
+  overflow: hidden;
 }
 .card0 > img { 
-    box-sizing: border-box;
-    width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 .card0 > div { 
-    box-sizing: border-box;
-    min-height: 200px;
-    padding: 16px;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding: 16px;
 }
 .card0 > div > h1 { 
-    margin: 0;
+  margin: 0;
 }
 .card1{ 
-    background: center / cover url("./imageHiking.jpg");
-    border: solid 1px lightgray;
-    border-radius: 16px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 16px;
-    max-width: 275px;
-    min-width: 275px;
-    overflow: hidden;
+  background: center / cover url("./imageHiking.jpg");
+  border: solid 1px lightgray;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 16px;
+  max-width: 275px;
+  min-width: 275px;
+  overflow: hidden;
 }
 .card1 > div { 
-    backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    min-height: 200px;
-    padding: 16px;
+  backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  min-height: 200px;
+  padding: 16px;
 }
 .card1 > div > h1 {
-    margin: 0;
+  margin: 0;
 }
 .card2 {
-    align-items: center;
-    border: solid 1px lightgray;
-    border-radius: 16px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 16px;
-    max-width: 575px;
-    min-width: 275px;
-    overflow: hidden;
+  align-items: center;
+  border: solid 1px lightgray;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 16px;
+  max-width: 575px;
+  min-width: 275px;
+  overflow: hidden;
 }
 .backImage {
-    background: center / cover url("./imageTrekking.jpg");
-    border-radius: 100%;
-    box-shadow: inset 0px 1px 15px 9px rgba(0,0,0,0.20);
-    box-sizing: border-box;
-    height: 150px;
-    margin: 16px;
-    overflow: hidden;
-    width: 150px;
+  background: center / cover url("./imageTrekking.jpg");
+  border-radius: 100%;
+  box-shadow: inset 0px 1px 15px 9px rgba(0,0,0,0.20);
+  box-sizing: border-box;
+  height: 150px;
+  margin: 16px;
+  overflow: hidden;
+  width: 150px;
 }
 .card2 > .contents {
-    box-sizing: border-box;
-    min-height: 200px;
-    padding: 16px;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding: 16px;
 }
 .card2 > .contents > h1 { 
     margin: 0;
-}
-/*titol amb imatge centrada de fons*/
-body { 
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.pictureHeader { 
-    align-items: center;
-    background: center / cover url("./imageMain.jpg");
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 400px;
-    position: relative;
-}
-.pictureHeader > h1 { 
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
-}
-.pictureHeader > p { 
-    box-sizing: border-box;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: 100;
-    margin: 0;
-    margin-top: 16px;
-    max-width: 80%;
-    text-align: center;
-}
-/*imatge cuadre text*/
-body { 
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-}
-.pictureTextBox { 
-    align-items: center;
-    background: center / cover url("./imageMain.jpg");
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 400px;
-    position: relative;
-}
-.pictureTextBox > div { 
-    align-items: center;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 25px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 80%;
-    padding: 16px;
-    position: absolute;
-}
-.pictureTextBox > div > h1 { 
-    color: #ffffff;
-    font-size: 1.5em;
-    margin: 0;
-    text-align: center;
-}
-.pictureTextBox > div > p { 
-    margin: 0;
-    margin-top: 16px;
-    text-align: justify;
 }
 /*menu frozenglass*/
 :root{
@@ -439,86 +253,64 @@ html, body{
     radial-gradient(800px 200px at 90% 0%, rgba(0,200,120,0.15), transparent 60%);
   padding-top: 10px;
 }
-
-/* ===== CONTENIDOR AUTOCENTRAT ===== */
-.autocenter{
-  width: min(100% - 32px, var(--page-max));
-  margin: 0 auto;
-  line-height: 1.6;
-  padding: 24px 0 80px;
-}
 /*pie de pantalla*/
 body {
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-.autocenter {
-    flex: 1; /* ocupa tot l'espai disponible abans del footer */
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
 footer {
-    background: rgba(30, 30, 30, 0.95);
-    color: #eee;
-    padding: 30px 10%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /*permite adaptabilidad a pantallas pequeñas*/
+  background: rgba(30, 30, 30, 0.95);
+  color: #eee;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /*permite adaptabilidad a pantallas pequeñas*/
 }
 
 .footerCol {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
 .footerCol h3 {
-    border-bottom: 2px solid #66ccff;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
+  border-bottom: 2px solid #66ccff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
 .footerCol ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footerCol ul li {
-    margin: 6px 0;
+  margin: 6px 0;
 }
 
 .footerCol a {
-    color: #66ccff;
-    text-decoration: none;
+  color: #66ccff;
+  text-decoration: none;
 }
 
 .footerCol a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footerBottom {
-    text-align: center;
-    font-size: 0.9em;
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid #444;
-    width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #444;
+  width: 100%;
 }
 /*taules*/
-:root{
-  --page-max: 800px;
-  --color-header: #004080;
-  --color-odd-row: #f5f9ff;
-  --color-highlight: #ffdf91;
-}
 
 *{ box-sizing: border-box; }
 
@@ -529,12 +321,6 @@ html, body{
   background: #fafcff;
   color: #222;
 }
-
-.autocenter{
-  width: min(100% - 32px, var(--page-max));
-  margin: 40px auto;
-}
-
 /*taula*/
 .taulaExemple{
   width: 100%;
@@ -583,23 +369,23 @@ html, body{
 
         
 .main-nav__nav-link {
-    position: relative;
-    padding-bottom: 17px;
-    font-size: 14px;
-    color: #000;
-    line-height: 16px;
-    letter-spacing: -0.005em;
+  position: relative;
+  padding-bottom: 17px;
+  font-size: 14px;
+  color: #000;
+  line-height: 16px;
+  letter-spacing: -0.005em;
 }
 .div {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 .templatesHero__artwork {
-    position: relative;
-    z-index: 0;
-    height: 100vh;
-    max-height: 927px;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  max-height: 927px;
 }
