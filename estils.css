@@ -590,3 +590,16 @@ html, body{
     line-height: 16px;
     letter-spacing: -0.005em;
 }
+.div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+.templatesHero__artwork {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    max-height: 927px;
+}
