@@ -226,6 +226,30 @@ body {
 .card2 > .contents > h1 { 
     margin: 0;
 }
+.card3 { 
+  border: solid 1px lightgray;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  max-width: 35%;
+  min-width: 275px;
+  overflow: hidden;
+}
+.card3 > img { 
+  box-sizing: border-box;
+  width: 10%;
+}
+.card3 > div { 
+  box-sizing: border-box;
+  min-height: 200px;
+  padding: 16px;
+}
+.card3 > div > h1 { 
+  margin: 0;
+}
 /*text gradient*/
 .gradient-text {
   background: conic-gradient(#ec8c86,#d78191,#c1759c,#8eabcb,#7cbddb,#91c6a8,#b4d48d,#dfc17e,#ec8c86);
