@@ -146,6 +146,12 @@ body {
   padding-right: var(--horizPadding);
   width: calc(100% - 2 * var(--horizPadding));
 }
+.cardsContainer2 { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
 .card0 { 
   border: solid 1px lightgray;
   border-radius: 16px;
@@ -227,14 +233,12 @@ body {
     margin: 0;
 }
 .card3 { 
-  border: solid 1px lightgray;
   border-radius: 16px;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
   display: inline-block;
   flex-direction: column;
   justify-content: space-between;
   margin: 16px;
-  max-width: 35%;
   min-width: 275px;
   overflow: hidden;
 }
