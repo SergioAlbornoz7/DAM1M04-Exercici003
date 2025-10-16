@@ -160,7 +160,9 @@ body {
 }
 .card0 > img { 
   box-sizing: border-box;
-  width: 100%;
+  width: 86%;
+  margin: 7%;
+  margin-top: 0px;
 }
 .card0 > div { 
   box-sizing: border-box;
