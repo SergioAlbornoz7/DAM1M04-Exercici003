@@ -337,7 +337,7 @@ footer {
   margin: 10px;
 }
 
-.footerCol ul {
+.footerCol {
   display: flex;
   flex-direction: column;
   flex: 1fr 1fr 1fr 1fr;
@@ -346,7 +346,7 @@ footer {
   margin: 0;
 }
 
-.footerCol ul li {
+.footerCol {
   display: flex;
   flex-direction: column;
   flex: 1fr 1fr 1fr 1fr;
@@ -466,8 +466,6 @@ footer {
 .boxesContainer > .box > p:last-child { 
   margin: 0;
 }
-
-
 ul{
   display: flex;
   justify-content: space-around;
@@ -481,6 +479,17 @@ ul{
   line-height: 1.45;
   letter-spacing: -0.002em;
 }
+.column {
+  display:flex;
+  flex: 1;
+  margin: 0 10px;
+  margin: 10px 0;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
     
 
 
