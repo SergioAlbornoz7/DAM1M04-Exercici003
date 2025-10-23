@@ -432,6 +432,7 @@ footer {
   width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
 }
 .boxesContainer > .box { 
+  flex: 0 0 calc(33.333% - 16px);
   align-items: center;
   background-color: #cacaca;
   border-radius: 16px;
@@ -440,7 +441,6 @@ footer {
   flex-direction: column;
   height: 200px;
   justify-content: space-between;
-  width: 240px;
   padding: 24px;
 }
 /*alineacion inconos amarillo caja gris*/
@@ -466,6 +466,3 @@ ul{
   line-height: 1.45;
   letter-spacing: -0.002em;
 }
-    
-
-
