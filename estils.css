@@ -14,6 +14,9 @@ html, body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: #222;
   background: #fafcff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 h1 {
   max-width: 47%; 
@@ -28,7 +31,12 @@ button {
   border-radius: 10px;
   border: none;
 }
-
+.main-wrapper {
+  max-width: 1264px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
 /*TOPNAV*/
 .topnav {
   --horizontal-padding: 16px; /* àmbit local */
@@ -124,7 +132,9 @@ button {
 
 /*autocenter*/
 .autocenter {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   justify-items: center;
   flex: 1;
   align-items: center;
@@ -138,11 +148,6 @@ button {
   text-align: center;
 }
 /*targestes o cards*/
-body { 
-  font-family: "Open Sans";
-  margin: 0;
-  padding: 0;
-}
 .cardsContainer { 
   --horizPadding: 16px;
   
@@ -334,13 +339,6 @@ body {
   padding-top: 10px;
 }
 /*pie de pantalla*/
-body {
-  margin: 0;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 footer {
   background: rgba(30, 30, 30, 0.95);
   color: #eee;
@@ -451,64 +449,64 @@ footer {
   max-height: 927px;
 }
 .autocenterContainer {
-    max-width: 1264px;    /* amplada màxima */
-    margin: auto;         /* centra horitzontalment */
-    padding: 20px;
+  justify-items: center;
+  margin: auto;
+  padding: 20px;
 }
 .boxesContainer {
-    --horizPadding: 16px;
+  --horizPadding: 16px;
 
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px;
-    padding-left: var(--horizPadding);
-    padding-right: var(--horizPadding);
-    width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-left: var(--horizPadding);
+  padding-right: var(--horizPadding);
+  width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
 }
 .boxesContainer > .box { 
-    align-items: center;
-    background-color: #cacaca;
-    border-radius: 16px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    width: 240px;
-    padding: 24px;
+  align-items: center;
+  background-color: #cacaca;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  width: 240px;
+  padding: 24px;
 }
 /*alineacion inconos amarillo caja gris*/
 .boxesContainer > .box > p:first-child { 
-    font-size: 2em;
-    margin: 0;
+  font-size: 2em;
+  margin: 0;
 }
 .boxesContainer > .box > p:last-child { 
-    margin: 0;
+  margin: 0;
 }
 .grid-3col {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
 }
 ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    max-width: 896px;
-    margin-top: 84px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.45;
-    letter-spacing: -0.002em;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  max-width: 896px;
+  margin-top: 84px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.002em;
 }
 .grid-4col {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
 }    
 
 
