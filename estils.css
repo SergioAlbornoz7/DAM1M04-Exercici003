@@ -454,17 +454,17 @@ footer {
 
 
 ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    max-width: 896px;
-    margin-top: 84px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.45;
-    letter-spacing: -0.002em;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  max-width: 896px;
+  margin-top: 84px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.002em;
 }
     
 
