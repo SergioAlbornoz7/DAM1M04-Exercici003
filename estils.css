@@ -351,35 +351,27 @@ footer {
 }
 
 .footerCol {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1fr 1fr 1fr 1fr;
   min-width: 200px;
   margin: 10px;
 }
 
-.footerCol h3 {
-  border-bottom: 2px solid #66ccff;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-}
-
 .footerCol ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1fr 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .footerCol ul li {
+  display: flex;
+  flex-direction: column;
+  flex: 1fr 1fr 1fr 1fr;
   margin: 6px 0;
-}
-
-.footerCol a {
-  color: #66ccff;
-  text-decoration: none;
-}
-
-.footerCol a:hover {
-  text-decoration: underline;
 }
 
 .footerBottom {
