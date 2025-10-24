@@ -441,23 +441,31 @@ footer {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   padding-left: var(--horizPadding);
   padding-right: var(--horizPadding);
   width: calc(100% - 2 * var(--horizPadding)); /* 100% - 32px */
+  margin: -8px;
+  align-items: stretch; 
 }
 .boxesContainer > .box { 
   flex: 0 0 calc(33.333% - 16px);
-  align-items: center;
-  background-color: #cacaca;
-  border-radius: 16px;
+  max-width: 23%;
+  margin: 1%;
   box-sizing: border-box;
+  background-color: #dfdfdf;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  align-items: center;
   justify-content: space-between;
   padding: 24px;
+  aspect-ratio: 1.3 / 1;
+  overflow: hidden;
+}
+.boxesContainer > .box > p {
+  text-align: center;
 }
 /*alineacion inconos amarillo caja gris*/
 .boxesContainer > .box > p:first-child { 
@@ -489,4 +497,32 @@ ul{
   text-align: center;
   list-style: none;
   padding: 0;
+}
+.col4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 20px;
+  list-style: none;
+  margin: 0 auto;
+}
+.col4 > li {
+  flex: 0 0 calc(25% - 32px);
+  max-width: calc(25% - 32px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col4 > li img {
+  display: block;
+  margin-bottom: 8px;
+  width: 60px;
+  height: auto;
+}
+.col4 > li h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
 }
