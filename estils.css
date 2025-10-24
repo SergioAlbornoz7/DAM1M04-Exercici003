@@ -384,7 +384,7 @@ footer {
 }
 
 /*Primera columna*/
-.taulaExemple td:first-child,
+
 .taulaExemple th:first-child{
   font-weight: 600;
   background-color: rgba(0, 64, 128, 0.05);
@@ -489,4 +489,22 @@ ul{
   text-align: center;
   list-style: none;
   padding: 0;
+}
+.container {
+display: flex; /* Alinea las imágenes en línea */
+justify-content: center; /* Centra las imágenes horizontalmente */
+gap: 50px; /* Espacio entre las imágenes */
+flex-wrap: wrap; /* Permite que las imágenes se ajusten si no caben en una línea */
+}
+
+.image-box {
+display: flex;
+flex-direction: center; /* Coloca la imagen y el texto en columna */
+align-items: center; /* Centra el contenido (imagen y texto) */
+text-align: center; /* Centra el texto */
+}
+
+.image-box img {
+max-width: 150px; /* Ajusta el tamaño de las imágenes */
+height: auto; /* Mantiene la proporción */
 }
